@@ -1,0 +1,56 @@
+/*border of card specs:*/
+
+.item{
+	border-style: solid;
+    border-color: lightblue;
+}
+
+.div1{
+	border-style: dotted;
+    border-color: lightgray;
+}
+
+.div2 {
+	display:flex;
+	align-item:center;
+	justify-content:center;
+}
+
+
+.div4{
+    background-color: grey;
+    color: yellow;
+}
+
+/*Header formatting*/
+
+h1 {
+    text-align: center;
+}
+
+.div3 {
+	text-align: justify;
+}
+#footer{
+	padding-top: 10px;
+	font-size: small;
+}
+
+li {
+	font-weight: bold;
+	list-style: none;
+}
+
+article {
+	width: 30%;
+	float: left;
+
+}
+
+header {
+	font-weight: bold;
+}
+
+.img {
+	width: 30%;
+}
