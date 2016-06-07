@@ -1,55 +1,59 @@
-var tree = function() {
-  var pinetree = [];
-  pinetree[inputHeight.value] = inputChar.value;
-// (I need to link the input of the html block (class=character) here...)
-  console.log("pinetree", pinetree);
-
-  console.log("pinetree.length", pinetree.length);
-
-  for (var j = 0; j < pinetree.length; j++) {
-    pinetree[j] = " ";
-  }
-    var newHeight = inputHeight.value - 1
-
-  for (var i = 0; i < inputHeight.value; i++) {
-    // console.log("height", height);
-    pinetree[newHeight - i] = inputChar.value;
-
-    pinetree[newHeight + i] = inputChar.value;
-
-
-   
-    // (I need to link the input of the html block (class=character) here...)
-
-    var pineOutput = pinetree.join("");
-    console.log(pineOutput);
-
-
-    document.getElementById('display').innerHTML += '<p>' + pineOutput;
-    // need a statement here to send the output tree to the webpage! 
-    // this doesnt work well...
-  }
-};
-
-// tree(7);
-
-// *** I need to link the input in the html block (class= height) to the variable "tree" above.
-// enter the integer for the height of your tree above
-
-// thoughts...
+// GET HTML USER INPUT FOR HEIGHT AND TYPE OF CHARACTER
 
 var inputHeight = document.getElementById ("inputHeight");
-
 var inputChar = document.getElementById ("inputChar");
-
 var submitButton = document.getElementById("submitButton");
-
-submitButton.addEventListener("click", tree);
-
+var enterButton = document.getElementById("enterButton");
 
 
 
 
+// TREE FUNCTION HERE:
 
+
+
+
+
+
+var tree = function() {
+  
+  inputHeight=inputHeight.value;
+  // console.log("entered Height Value", enteredHeightValue);
+  inputChar=inputChar.value;
+  // console.log("enteredCharacterValue", enteredCharacterValue);
+  var spaces = 1;
+  // work on growTree function here
+
+
+
+
+
+
+};
+
+// document.getElementById('display').innerHTML += '<p>' + pineOutput;
+
+// EVENT LISTENERS HERE:
+
+
+// //must add an event listener to submit buton here:
+// submitButton.addEventListener("click", tree);
+
+// // must add an event listener to the ENTER key:
+// window.addEventListener("keydown", function (enter) {
+//   if (event.enter) {
+
+//     console.log ("ENTER key used!")
+//     return; // Should do nothing if the key event was already consumed.
+//   }
+
+// code=13 is for ENTER KEY!
+
+// function showChar(e)
+// {
+// alert("Key Pressed: " + String.fromCharCode(e.charCode) + "\n"
+//       + "charCode: " + e.charCode);
+// }
+// console.log(showChar, "showChar");
 
 
